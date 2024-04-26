@@ -21,7 +21,8 @@
         <div class="row">
             <div class="image-container"><img id="setting_id" src="img/settingicon1.png" height="200" width="200"/></div>
             <div class="image-container"><img id="chat_id"  src="img/chaticon1.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/squ.png" height="200" width="200"/></div>
+            <div class="image-container"><img src="img/tri.png" height="200" width="200"/></div>
+          
         </div>
 
         <div class="row">
@@ -51,15 +52,16 @@ console.dir(setting_element)
 
 setting_element.onpointerover = () => {
     setting_element.src = `img/settingicon2.png`
+    slide_sound.play () 
 }
 setting_element.onpointerleave = () => {
     setting_element.src = `img/settingicon1.png`
-    slide_sound.play () 
+   
 }
  
 
 const bubble_sound = document.createElement("audio")
-bubble_sound.src = "iconsounds/sound1.mp3"
+bubble_sound.src = "iconsounds/bubblesound1.wav"
 
 const chat_element = document.getElementById (`chat_id`)
 
@@ -68,10 +70,11 @@ console.dir(chat_element)
 
 chat_element.onpointerover = () => {
     chat_element.src = `img/chaticon2.png`
+    bubble_sound.play () 
 }
 chat_element.onpointerleave = () => {
     chat_element.src = `img/chaticon1.png`
-    bubble_sound.play () 
+   
 }
 
 
