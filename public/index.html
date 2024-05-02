@@ -19,22 +19,22 @@
     <body>
 
         <div class="row">
-            <div class="image-container"><img id="setting_id" src="img/settingicon1.png" height="200" width="200"/></div>
-            <div class="image-container"><img id="chat_id"  src="img/chaticon1.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/tri.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="setting_id" src="img/set1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="home_id"  src="img/home1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id= "pro_id" src="img/profile1.png" height="200" width="200"/></div>
           
         </div>
 
         <div class="row">
-            <div class="image-container"><img src="img/hex.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/rec.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/sta.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="chat_id" src="img/chat1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="forum_id" src="img/forum1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="planet_id" src="img/planet1.png" height="200" width="200"/></div>
             </div>
 
         <div class="row">
-            <div class="image-container"><img src="img/trr.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/her.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="marak_id" src="img/mark1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="support_id"src="img/support1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="mood_id" src="img/moodtrack1.png" height="200" width="200"/></div>
         </div>
         
     </body>
@@ -42,8 +42,10 @@
 </html>
 <script>
 
+document.body.style.backgroundColor = 'hsl(51,15%,100%)'
+
 const slide_sound = document.createElement("audio")
-slide_sound.src = "iconsounds/sound1.mp3"
+slide_sound.src= "iconsounds/sound1.mp3"
 
 const setting_element = document.getElementById (`setting_id`)
 
@@ -51,14 +53,51 @@ console.dir(setting_element)
 
 
 setting_element.onpointerover = () => {
-    setting_element.src = `img/settingicon2.png`
+    setting_element.src = `img/set2.png`
     slide_sound.play () 
 }
 setting_element.onpointerleave = () => {
-    setting_element.src = `img/settingicon1.png`
+    setting_element.src = `img/set1.png`
    
 }
  
+
+2222222222
+const home_sound= document.createElement("audio")
+home_sound.src= "iconsounds/lamp.wav"
+
+const home_element = document.getElementById ('home_id')
+console.dir(home_element)
+
+home_element.onpointerover = () => {
+    home_element.src= 'img/home2.png'
+    home_sound.play () 
+}
+
+home_element.onpointerleave = () => {
+    home_element.src = `img/home1.png`
+}
+
+
+33333
+const pop_sound = document.createElement("audio")
+pop_sound.src= "iconsounds/popsound.wav"
+
+const pro_element = document.getElementById ('pro_id')
+console.dir(home_element)
+
+pro_element.onpointerover = () => {
+    pro_element.src= 'img/profile2.png'
+    pop_sound.play () 
+}
+
+pro_element.onpointerleave = () => {
+    pro_element.src = `img/profile1.png`
+}
+
+
+
+4444
 
 const bubble_sound = document.createElement("audio")
 bubble_sound.src = "iconsounds/bubblesound1.wav"
@@ -69,14 +108,119 @@ console.dir(chat_element)
 
 
 chat_element.onpointerover = () => {
-    chat_element.src = `img/chaticon2.png`
+    chat_element.src = `img/chat2.png`
     bubble_sound.play () 
 }
 chat_element.onpointerleave = () => {
-    chat_element.src = `img/chaticon1.png`
+    chat_element.src = `img/chat1.png`
    
 }
 
+
+5555
+const pool_sound = document.createElement("audio")
+pool_sound.src = "iconsounds/forumpool.wav"
+const forum_element = document.getElementById ('forum_id')
+console.dir(forum_element)
+
+forum_element.onpointerover = () =>{ forum_element.src= 'img/forum2.png'
+pool_sound.play () 
+}
+
+forum_element.onpointerleave = () => {forum_element.src = `img/forum1.png`
+}
+
+6666
+
+const pl_sound = document.createElement("audio")
+pl_sound.src = "iconsounds/planetdrum.wav"
+const planet_element = document.getElementById ('planet_id')
+console.dir(planet_element)
+
+planet_element.onpointerover = () => {
+    planet_element.src= 'img/planet2.png'
+    pl_sound.play () 
+}
+
+planet_element.onpointerleave = () => {
+    planet_element.src = `img/planet1.png`
+}
+
+
+
+77777
+
+const m_sound = document.createElement("audio")
+m_sound.src = "iconsounds/mark.wav"
+
+const bookmark_element = document.getElementById ('mark_id')
+console.dir(bookmark_element)
+
+bookmark_element.onpointerover = () => {
+    bookmark_element.src= 'img/mark2.png'
+     m_sound.play () 
+
+}
+
+bookmark_element.onpointerleave = () => {
+    bookmark_element.src = `img/mark1.png`
+}
+
+8888888
+
+const su_sound = document.createElement("audio")
+su_sound.src = "iconsounds/support.wav"
+
+const support_element = document.getElementById (`support_id`)
+
+console.dir(support_element)
+
+
+support_element.onpointerover = () => {
+    support_element.src= `img/support3.png`
+    su_sound.play () 
+}
+support_element.onpointerleave = () => {
+   support_element.src = `img/support1.png`
+   
+}
+
+
+9999
+const page_sound = document.createElement("audio")
+page_sound.src = "iconsounds/pageflip.wav"
+
+const mood = document.getElementById (`mood_id`)
+
+console.dir(mood_element)
+
+
+mood.onpointerover = () => {
+    mood_element.src = `img/moodtrack2.png`
+    page_sound.play () 
+}
+mood_element.onpointerleave = () => {
+   mood_element.src = `img/moodtrack1.png`
+   
+}
+
+
+// const pop_sound = document.createElement("audio")
+// pop_sound.src = "iconsounds/popsound1.wav"
+
+// const homepage_element = document.getElementById (`homepage_id`)
+
+// console.dir(homepage_element)
+
+
+// chat_element.onpointerover = () => {
+//     chat_element.src = `img/.png`
+//     pop_sound.play () 
+// }
+// chat_element.onpointerleave = () => {
+//     chat_element.src = `img/.png`
+   
+// }
 
 
 
