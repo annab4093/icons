@@ -32,7 +32,7 @@
             </div>
 
         <div class="row">
-            <div class="image-container"><img id="marak_id" src="img/mark1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="mark_id" src="img/mark1.png" height="200" width="200"/></div>
             <div class="image-container"><img id="support_id"src="img/support1.png" height="200" width="200"/></div>
             <div class="image-container"><img id="mood_id" src="img/moodtrack1.png" height="200" width="200"/></div>
         </div>
@@ -186,21 +186,21 @@ support_element.onpointerleave = () => {
 }
 
 
-9999
+// 9999
 const page_sound = document.createElement("audio")
 page_sound.src = "iconsounds/pageflip.wav"
 
 const mood = document.getElementById (`mood_id`)
 
-console.dir(mood_element)
+// console.dir(mood)
 
 
 mood.onpointerover = () => {
-    mood_element.src = `img/moodtrack2.png`
+    mood.src = `img/moodtrack2.png`
     page_sound.play () 
 }
-mood_element.onpointerleave = () => {
-   mood_element.src = `img/moodtrack1.png`
+mood.onpointerleave = () => {
+   mood.src = `img/moodtrack1.png`
    
 }
 
